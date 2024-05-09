@@ -7,20 +7,51 @@
 :root{
     --background : #211A1D;
     --text-color : #FFF689;
+    --background-hover: #141313;
 }
 body{
     background-color: var(--background);
     color: var(--text-color);
     font-family: 'Finger Paint', sans-serif;
+    display: grid;
     
 }
 .heading{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 2.7rem;
-    border: 1px solid var(--text-color);
+    font-size: 2.3rem;
+    /* border-bottom: 1px solid var(--text-color); */
 }
 .heading h6{
     font-size: 1.2rem;
-    margin-left: 27rem;
+    margin-left: 20rem;
+}
+.game{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 40px;
+    width: 600px;
+    height: 600px;
+}
+.cell{
+    width: 200px; 
+    border: 1px solid var(--text-color);
+    height: 200px;
+}
+.cell:hover{
+    background-color: var(--background-hover)
+}
+#first , #second , #third{
+    border-top: none;
+}
+#first , #fourth , #seventh{
+    border-left: none;
+}
+#third , #sixth , #ninth{
+    border-right: none;
+}
+#seventh , #eighth , #ninth{
+    border-bottom: none;
 }
