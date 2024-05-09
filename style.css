@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --background : #211A1D;
+    --text-color : #FFF689;
+}
+body{
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'Finger Paint', sans-serif;
+    
+}
+.heading{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.7rem;
+    border: 1px solid var(--text-color);
+}
+.heading h6{
+    font-size: 1.2rem;
+    margin-left: 27rem;
+}
