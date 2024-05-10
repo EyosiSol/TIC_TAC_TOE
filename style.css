@@ -8,6 +8,7 @@
     --background : #211A1D;
     --text-color : #FFF689;
     --background-hover: #141313;
+    --inputfield : #4d3f45;
 }
 body{
     background-color: var(--background);
@@ -26,19 +27,23 @@ body{
     font-size: 1.2rem;
     margin-left: 20rem;
 }
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .game{
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;    
     grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 40px;
-    width: 600px;
-    height: 600px;
+    margin-top: 10vh;
+    width: 540px;
+    height: 540px;
 }
 .cell{
-    width: 200px; 
+    width: 180px; 
     border: 1px solid var(--text-color);
-    height: 200px;
+    height: 180px;
 }
 .cell:hover{
     background-color: var(--background-hover)
@@ -54,4 +59,83 @@ body{
 }
 #seventh , #eighth , #ninth{
     border-bottom: none;
+}
+
+.player1 , .player2{
+    margin-top: 5vh;
+    /* border: 1px solid var(--text-color); */
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    font-size: 6em;
+    margin-top: 10px;
+    align-self: top;
+    justify-self: top;
+}
+.symbol{
+    align-self: center;
+    font-size: 15em;
+    border: 1px solid var(--text-color);
+    padding: 0px 90px;
+    border-radius: 100%;
+    margin-top: 5vh;
+}
+
+.modal{
+    justify-self: center;
+    width:  max-content;
+    height: 500px;
+    background-color: var(--background-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 40px;
+    border-radius: 20px;
+    color: var(--text-color);
+    border: none;
+
+    justify-self: center;
+    align-self: center;
+    margin-top: 20vh;
+}
+.modal::backdrop{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    background-color: var(--inputfield);
+    color: var(--text-color);
+    text-align: center;
+    width: 300px;
+    border-radius: 7px;
+}
+button{
+    margin-top: 3vh;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: var(--text-color);
+    color: var(--background-hover);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+}
+button:hover{
+    background-color: var(--background-hover);
+    color: var(--text-color);
 }
