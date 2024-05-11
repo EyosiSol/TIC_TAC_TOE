@@ -18,12 +18,32 @@ body{
     
 }
 .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    margin: 8vh 5vh;
+}
+
+.reset{
+    width: 100px;
+    padding: 35px 20px;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    margin-right: 8vh;
+}
+.reset:hover{
+    background-color: var(--background-hover);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.header{
     margin-top: 10px;
     text-align: center;
     font-size: 2.3rem;
     /* border-bottom: 1px solid var(--text-color); */
 }
-.heading h6{
+.header h6{
     font-size: 1.2rem;
     margin-left: 20rem;
 }
