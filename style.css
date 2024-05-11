@@ -9,6 +9,8 @@
     --text-color : #FFF689;
     --background-hover: #141313;
     --inputfield : #4d3f45;
+
+    --winningblock : #755858;
 }
 body{
     background-color: var(--background);
@@ -70,16 +72,16 @@ body{
 .cell:hover{
     background-color: var(--background-hover)
 }
-#first , #second , #third{
+.first , .second , .third{
     border-top: none;
 }
-#first , #fourth , #seventh{
+.first , .fourth , .seventh{
     border-left: none;
 }
-#third , #sixth , #ninth{
+.third , .sixth , .ninth{
     border-right: none;
 }
-#seventh , #eighth , #ninth{
+.seventh , .eigth , .ninth{
     border-bottom: none;
 }
 
@@ -106,6 +108,11 @@ body{
     padding: 0px 90px;
     border-radius: 100%;
     margin-top: 5vh;
+}
+.score1 , .score2{
+    margin-top: 5vh;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .modal{

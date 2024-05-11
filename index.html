@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIC TAC TOE</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="heading">
@@ -21,26 +20,29 @@
       <div class="player1">
         <span class="title" id="playerFirst">Player - 1</span>
         <span class="symbol">X</span>
+        <span class="score1"></span>
       </div>
       <div class="game">
-        <div class="cell " id="first"></div>
-        <div class="cell" id="second"></div>
-        <div class="cell" id="third"></div>
-        <div class="cell" id="fourth"></div>
-        <div class="cell" id="fifth"></div>
-        <div class="cell" id="sixth"></div>
-        <div class="cell" id="seventh"></div>
-        <div class="cell" id="eighth"></div>
-        <div class="cell" id="ninth"></div>
+        <div class="cell first" id="0"></div>
+        <div class="cell second" id="1"></div>
+        <div class="cell third" id="2"></div>
+        <div class="cell fourth" id="3"></div>
+        <div class="cell fifth" id="4"></div>
+        <div class="cell sixth" id="5"></div>
+        <div class="cell seventh" id="6"></div>
+        <div class="cell eigth" id="7"></div>
+        <div class="cell ninth" id="8"></div>
       </div>
       <div class="player2">
         <span class="title" id="playerSecond">Player- 2</span>
         <span class="symbol">O</span>
+        <span class="score2"></span>
+
       </div>
     </div>
 
 
-    <!-- <dialog class="modal" id="modal">
+    <dialog class="modal" id="modal">
       <form id="playerForm" method="dialog">
         <h2>Welcome to Tic-Tac-Toe</h2>
         <label for="player1">Player 1</label>
@@ -49,7 +51,7 @@
         <input type="text" id="player2" name="player2" required />
         <button type="submit" id="start">Start</button>
       </form>
-    </dialog> -->
+    </dialog>
 
     <div class="sides">
     </div>
@@ -58,5 +60,9 @@
       <h3 id="result">Player 1 Turn</h3>
       <button class="reset" onclick="reset()">Reset</button>
     </div> -->
+
+
+    <script src="script.js"></script>
+
   </body>
 </html>
