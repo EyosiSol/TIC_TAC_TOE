@@ -77,10 +77,6 @@ function boxClicked(e) {
     }
 
     if(countsPlayed == 9) {
-        playerOneScore++
-        playerTwoScore++
-        score1.innerText = playerOneScore;
-        score2.innerText = playerTwoScore
         boxes.forEach(box => box.style.backgroundColor = winnerIndicator)
     }
 }
