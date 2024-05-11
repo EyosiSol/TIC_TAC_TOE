@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Finger Paint', sans-serif;
 }
 :root{
     --background : #211A1D;
@@ -29,11 +30,11 @@ body{
 .change{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 100px; 
 }
 #reset{
-    width: 100px;
-    padding: 35px 20px;
+    width: 115px;
+    height: 115px;
     font-size: 1.2rem;
     border-radius: 100%;
     margin-right: 8vh;
@@ -41,6 +42,7 @@ body{
 }
 #continue{
     width: 150px;
+    height: 60px;
     align-self: center;
 }    
 .reset:hover{
