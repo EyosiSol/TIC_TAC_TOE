@@ -12,15 +12,21 @@
         <h1>Tic-Tac-Toe</h1>
         <h6>by Eyosi</h6>
       </div>
-      <div class="restart">
-        <button id="reset">Restart</button>
+      <div class="change">
+        <div class="continue">
+          <button id="continue">Continue</button>
+        </div>
+        <div class="restart">
+          <button id="reset">Restart</button>
+        </div>
       </div>
+      
     </div>
     <div class="board">
       <div class="player1">
         <span class="title" id="playerFirst">Player - 1</span>
         <span class="symbol">X</span>
-        <span class="score1"></span>
+        <h3 class="score1" id="scoreOne"></h3>
       </div>
       <div class="game">
         <div class="cell first" id="0"></div>
@@ -35,8 +41,8 @@
       </div>
       <div class="player2">
         <span class="title" id="playerSecond">Player- 2</span>
-        <span class="symbol">O</span>
-        <span class="score2"></span>
+        <span class="symbol">0</span>
+        <h3 class="score2" id="scoreTwo"></h3>
 
       </div>
     </div>
@@ -52,15 +58,6 @@
         <button type="submit" id="start">Start</button>
       </form>
     </dialog>
-
-    <div class="sides">
-    </div>
-    <!-- <div class="result">
-      <h2>Result</h2>
-      <h3 id="result">Player 1 Turn</h3>
-      <button class="reset" onclick="reset()">Reset</button>
-    </div> -->
-
 
     <script src="script.js"></script>
 

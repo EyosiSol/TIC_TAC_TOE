@@ -26,14 +26,23 @@ body{
     height: 5vh;
     margin: 8vh 5vh;
 }
-
+.change{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
 #reset{
     width: 100px;
     padding: 35px 20px;
     font-size: 1.2rem;
     border-radius: 100%;
     margin-right: 8vh;
+    text-align: c;
 }
+#continue{
+    width: 150px;
+    align-self: center;
+}    
 .reset:hover{
     background-color: var(--background-hover);
     color: var(--text-color);
@@ -116,15 +125,16 @@ body{
 }
 
 .modal{
-    justify-self: center;
-    width:  max-content;
-    height: 500px;
-    background-color: var(--background-hover);
     display: flex;
+    flex-direction: column;
+    width:  max-content;
+    height: 640px;
+    background-color: var(--background-hover);
     align-items: center;
     justify-content: center;
     font-size: 2rem;
     padding: 40px;
+    padding-top: 14vh;
     border-radius: 20px;
     color: var(--text-color);
     border: none;
