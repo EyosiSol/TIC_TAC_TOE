@@ -102,10 +102,11 @@ body{
     margin-top: 20vh;
 }
 .modal::backdrop{
-    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    background: linear-gradient(135deg,var(--text-color),var(--inputfield));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
 form{
     display: flex;
     flex-direction: column;

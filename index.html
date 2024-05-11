@@ -14,7 +14,7 @@
     </div>
     <div class="board">
       <div class="player1">
-        <span class="title">Player - 1</span>
+        <span class="title" id="playerFirst">Player - 1</span>
         <span class="symbol">X</span>
       </div>
       <div class="game">
@@ -29,20 +29,20 @@
         <div class="cell" id="ninth"></div>
       </div>
       <div class="player2">
-        <span class="title">Player- 2</span>
+        <span class="title" id="playerSecond">Player- 2</span>
         <span class="symbol">O</span>
       </div>
     </div>
 
 
-    <dialog class="modal">
+    <dialog class="modal" id="modal">
       <form id="playerForm" method="dialog">
         <h2>Welcome to Tic-Tac-Toe</h2>
         <label for="player1">Player 1</label>
         <input type="text" id="player1" name="player1" required />
         <label for="player2">Player 2</label>
         <input type="text" id="player2" name="player2" required />
-        <button type="submit" class="start">Start</button>
+        <button type="submit" id="start">Start</button>
       </form>
     </dialog>
 
